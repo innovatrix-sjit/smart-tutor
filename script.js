@@ -1,4 +1,4 @@
-const API_KEY = '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';  // 🔒 REMOVE old exposed key and replace with your real one safely
+const API_KEY = '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';  // 🔒 REMOVE old exposed key and replace with your real one safely
 const API_URL = 'https://api.openai.com/v1/chat/completions';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -130,3 +130,4 @@ Format your responses in clean Markdown for readability.`
     }
   });
 });
+
