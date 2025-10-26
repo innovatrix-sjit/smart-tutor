@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tutor-INNOVATRIX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <header>
+     <h1>
+  <img src="images/logo.png" alt="AI Tutor Logo" class="logo">
+  AI Tutor-INNOVATRIX
+</h1>
+
+      <button id="theme-toggle" class="toggle-btn">
+        <i class="fa-solid fa-moon"></i> Dark Mode
+      </button>
+    </header>
+
+    <main class="chat-layout">
+      <!-- Left: Chat Window -->
+      <div id="chat-window" class="chat-window">
+        <div class="message bot">
+          <img src="images/logo.png" class="logo"></img> Hello! I'm your AI tutor. Ask me anything!
+        </div>
+      </div>
+
+      <!-- Right: Input Area -->
+      <div class="input-area">
+  <textarea id="user-input" placeholder="Type your question..."></textarea>
+
+  <div class="input-buttons">
+    <button id="send-btn">Send</button>
+    <button id="voice-btn" title="Voice Input">🎤</button>
+    <label for="file-input" id="file-label" title="Upload File">📁</label>
+    <input type="file" id="file-input" style="display: none;" />
+    
+  </div>
+</div>
+
+  <!-- Markdown Parser -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<!-- MathJax for equations -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
